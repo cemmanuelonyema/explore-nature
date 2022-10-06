@@ -3,7 +3,7 @@
 .footer {
   background-color: #081315;
   font-size: 1.6rem;
-  color: white;
+  color: #777;
 
   &__container {
     padding: 6.4rem 3.2rem;
@@ -29,6 +29,14 @@
 
       a {
         padding: 1rem;
+        margin: 1rem 1.5rem 1.5rem 0;
+        color: white;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        background-color: #142e32;
+        display: grid;
+        place-content: center;
       }
     }
   }
@@ -44,10 +52,11 @@
 
     &-heading {
       margin-bottom: 1.6rem;
+      color: white;
     }
+
     &-link {
-      display: inline-block;
-      padding: 6px 0;
+      padding: 4px 0;
     }
   }
 }

@@ -13,3 +13,13 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}

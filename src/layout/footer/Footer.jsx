@@ -1,4 +1,5 @@
 import React from "react";
+import { FiTwitter, FiMail, FiLinkedin, FiInstagram } from "react-icons/fi";
 import "./footer.scss";
 
 export const Footer = () => {
@@ -17,22 +18,22 @@ export const Footer = () => {
           <ul className="footer__left-list">
             <li className="footer__nav-item">
               <a href="" className="footer__nav-link">
-                Tw
+                <FiMail className="footer__nav-icon" />
               </a>
             </li>
             <li className="footer__nav-item">
               <a href="" className="footer__nav-link">
-                Li
+                <FiInstagram className="footer__nav-icon" />
               </a>
             </li>
             <li className="footer__nav-item">
               <a href="" className="footer__nav-link">
-                In
+                <FiTwitter className="footer__nav-icon" />
               </a>
             </li>
             <li className="footer__nav-item">
               <a href="" className="footer__nav-link">
-                Ma
+                <FiLinkedin className="footer__nav-icon" />
               </a>
             </li>
           </ul>
