@@ -1,0 +1,61 @@
+//media query manager
+
+/*
+
+0-600px:  phone
+600-1000px: Tablet port
+900-1200px: tablet landscape
+1200-1800 = Normal styles
+1800 *  Big screens
+*/
+
+@mixin respond-phone {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+/*
+$breakpoint argument
+
+-phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px 
+calc = breakpoint/16px
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint== phone-max600 {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint== phone-min600 {
+    @media (min-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint== tab-max800 {
+    @media (max-width: 50em) {
+      @content;
+    }
+  }
+  @if $breakpoint== tab-max1000 {
+    @media (max-width: 62.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint== tab-max1200 {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint== desktop-min1200 {
+    @media (min-width: 75em) {
+      @content;
+    }
+  }
+}
