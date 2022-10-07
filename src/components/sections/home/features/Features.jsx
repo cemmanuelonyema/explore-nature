@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "../../../shared/card/Card";
+import { Box } from "../../../shared/card/Card";
 import "./features.scss";
 
 export const Features = () => {
@@ -35,11 +35,11 @@ export const Features = () => {
         <h2 className="features__heading">Features heading</h2>
         <div className="features__content">
           {featuresData.map(({ id, title, text, icon }) => (
-            <Card key={id}>
+            <Box key={id}>
               <h3>{title}</h3>
               <span>{icon}</span>
               <p>{text}</p>
-            </Card>
+            </Box>
           ))}
         </div>
       </div>
