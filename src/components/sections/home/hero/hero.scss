@@ -1,0 +1,33 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-color: black;
+  background: linear-gradient(
+      to bottom right,
+      rgba(1, 25, 4, 0.587),
+      rgba(9, 38, 10, 0.436)
+    ),
+    url(img/rolands-varsbergs-miKmVyq3qhE-unsplash.jpg) center / cover no-repeat;
+
+  &__content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem;
+
+    position: absolute;
+    top: 50%;
+    transform: translate(-0%, -50%);
+  }
+
+  .heading-primary {
+    &--1 {
+      display: block;
+    }
+    &--2 {
+      display: block;
+    }
+    font-size: 6.4rem;
+  }
+}

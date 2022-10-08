@@ -27,7 +27,7 @@ export const TourPlans = () => {
     },
   ];
   return (
-    <section className="plans">
+    <section className="plans" id="plans">
       <div className="plans__container">
         <h2 className="plans__heading">Most Popular Tour plans</h2>
         <div className="plans__content">
