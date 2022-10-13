@@ -6,6 +6,7 @@ import { TourPlans } from "../../components/sections/home/tour/TourPlans";
 import { Hero } from "../../components/sections/home/hero/Hero";
 import { Nav } from "../../components/layout/nav/Nav";
 import { About } from "../../components/sections/home/about/About";
+import { Contact } from "../../components/sections/home/contact/Contact";
 
 export const Home = () => {
   return (
@@ -15,6 +16,7 @@ export const Home = () => {
       <About />
       <Features />
       <TourPlans />
+      <Contact />
       <Footer />
     </Fragment>
   );

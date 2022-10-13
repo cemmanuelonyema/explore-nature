@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./nav.scss";
 
 export const Nav = () => {
@@ -31,7 +32,47 @@ export const Nav = () => {
             </a>
           </li>
         </ul>
+        <Link to="/dashboard">Dashboard</Link>
       </nav>
     </header>
+  );
+};
+
+export const SideBar = () => {
+  return (
+    <nav className="sideBar">
+      <ul>
+        <li>
+          <a href="">
+            <span>icon</span>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span>icon</span>
+            <span>Tours</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span>icon</span>
+            <span>favourites</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span>icon</span>
+            <span>transactions</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span>icon</span>
+            <span>Settings</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   );
 };

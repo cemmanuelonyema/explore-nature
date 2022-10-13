@@ -53,7 +53,7 @@ calc = breakpoint/16px
       @content;
     }
   }
-  @if $breakpoint== tab-max1200 {
+  @if $breakpoint== desktop-max1200 {
     @media (max-width: 75em) {
       @content;
     }

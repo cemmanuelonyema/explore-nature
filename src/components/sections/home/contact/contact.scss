@@ -1,0 +1,36 @@
+@import "../../../../styles/abstract/mixins";
+
+.contact {
+  background-color: yellow;
+  padding: 8rem 0;
+
+  &__container {
+    margin: 0 auto;
+    max-width: 120rem;
+    padding: 3rem;
+  }
+
+  &__content {
+    background-image: linear-gradient(
+        120deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(19, 19, 19, 0.8) 52%,
+        transparent 52%
+      ),
+      url(../../../../../public/img/pexels-valentina-diaz-13795361.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    padding: 8rem;
+    color: white;
+
+    h2 {
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  &__form {
+    width: 50%;
+  }
+}
