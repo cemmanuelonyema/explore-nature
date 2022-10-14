@@ -1,7 +1,7 @@
 @import "../../../../styles/abstract/mixins";
 
-.contact {
-  background-color: yellow;
+.newsletter {
+  background-color: rgb(0, 102, 0);
   padding: 8rem 0;
 
   &__container {
@@ -17,7 +17,7 @@
         rgba(19, 19, 19, 0.8) 52%,
         transparent 52%
       ),
-      url(../../../../../public/img/pexels-valentina-diaz-13795361.jpg);
+      url(/img/pexels-valentina-diaz-13795361.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -34,17 +34,42 @@
         ),
         url(../../../../../public/img/pexels-valentina-diaz-13795361.jpg);
     }
-
-    h2 {
-      margin-bottom: 3.2rem;
-    }
   }
 
   &__form {
-    width: 50%;
+    width: 40%;
 
     @include respond(phone-max600) {
       width: 100%;
     }
+  }
+
+  &__heading {
+    width: 80%;
+    margin-bottom: 3.2rem;
+  }
+}
+
+.form {
+  border: 0.5px solid #777;
+  display: flex;
+  padding-left: 1rem;
+
+  input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--white);
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  button {
+    padding: 1rem 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: green;
+    color: var(--white);
+    border: none;
   }
 }
