@@ -7,7 +7,7 @@ export const Newsletter = () => {
       <div className="newsletter__container">
         <div className="newsletter__content">
           <div className="newsletter__form">
-            <h2 class="newsletter__heading">
+            <h2 className="newsletter__heading">
               Want To Be The First To Know About Our New Tours Destination, And
               Discounts.
             </h2>

@@ -1,0 +1,11 @@
+@import "../../styles/abstract/mixins";
+
+.dashboard {
+  &__content {
+    display: flex;
+
+    @include respond(tab-max900) {
+      flex-direction: column;
+    }
+  }
+}

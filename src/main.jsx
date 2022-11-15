@@ -6,9 +6,9 @@ import { App } from "./App";
 import "./styles/globalStyle.scss";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
-  </React.StrictMode>
+  //   <React.StrictMode>
+  <Router>
+    <App />
+  </Router>
+  //   </React.StrictMode>
 );

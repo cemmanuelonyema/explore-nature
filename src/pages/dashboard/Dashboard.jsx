@@ -1,11 +1,17 @@
 import React, { Fragment } from "react";
-import { SideBar } from "../../components/layout/nav/Nav";
+import { Header } from "../../components/layout/header/Header";
+import { SideNav } from "../../components/layout/nav/Nav";
+import { HotelView } from "../../components/sections/dashboard/hotelView/HotelView";
 import "./dashboard.scss";
 
 export const Dashboard = () => {
   return (
-    <Fragment>
-      <SideBar />
-    </Fragment>
+    <main className="dashboard">
+      <Header />
+      <section className="dashboard__content">
+        <SideNav />
+        <HotelView />
+      </section>
+    </main>
   );
 };
