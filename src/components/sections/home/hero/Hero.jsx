@@ -19,7 +19,7 @@ export const Hero = () => {
       duration: 2.4,
       scale: 1.6,
       ease: "power4.inOut",
-      delay: -1,
+      delay: -2.2,
     });
   }, []);
 
