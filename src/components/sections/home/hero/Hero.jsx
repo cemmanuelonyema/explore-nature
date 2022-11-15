@@ -11,26 +11,32 @@ export const Hero = () => {
   let imageReveal = CSSRulePlugin.getRule(".img-container:after");
 
   useEffect(() => {
-    tl.to(imageReveal, {
-      duration: 2.4,
-      width: "0%",
-      ease: "power4.inOut",
-    }).from(image, {
-      duration: 2.4,
-      scale: 1.6,
-      ease: "power4.inOut",
-      delay: -2.2,
-    });
+    tl.to(container, {
+      duration: 0,
+      css: { visibility: "visible" },
+    })
+      .to(imageReveal, {
+        duration: 2.4,
+        width: "0%",
+        ease: "power4.inOut",
+      })
+      .from(image, {
+        duration: 2.4,
+        scale: 1.6,
+        ease: "power4.inOut",
+        delay: -2.4,
+      });
   }, []);
 
   return (
-    <section className="hero" id="hero">
+    <section className="hero" id="hero" ref={(el) => (container = el)}>
       <div className="img-container">
         <img
           ref={(el) => (image = el)}
           src="/public/img/rolands-varsbergs-miKmVyq3qhE-unsplash.jpg"
         />
       </div>
+
       <div className="hero__content">
         <h1 className="heading-primary">
           <span className="heading-primary--1"> Explore the beauty </span>

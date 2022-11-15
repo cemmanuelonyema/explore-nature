@@ -1,8 +1,7 @@
 .hero {
   position: relative;
   min-height: 100vh;
-  background-color: black;
-  //   visibility: hidden;
+  visibility: hidden;
 
   //   background: linear-gradient(
   //       to bottom right,
@@ -48,12 +47,6 @@
     height: 100%;
     right: 0;
     top: 0;
-
-    background-color: blue;
-  }
-
-  img {
-    width: 100%;
-    position: absolute;
+    background-color: #fff;
   }
 }
