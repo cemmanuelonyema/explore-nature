@@ -1,13 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FiMap, FiHome, FiKey } from "react-icons/fi";
+import { MdCarRental, MdTrackChanges } from "react-icons/md";
 import "./nav.scss";
 
 export const Nav = () => {
   return (
-    <header className="header">
+    <header className="header-nav">
       <nav className="nav">
         <div className="logo-box">
-          <img src="" alt="logo" />
+          <img src="../../../../public/img2/logo.png" alt="logo" />
         </div>
 
         <ul className="nav__list">
@@ -38,38 +40,32 @@ export const Nav = () => {
   );
 };
 
-export const SideBar = () => {
+export const SideNav = () => {
   return (
-    <nav className="sideBar">
-      <ul>
-        <li>
-          <a href="">
-            <span>icon</span>
-            <span>Dashboard</span>
+    <nav className="sideNav">
+      <ul className="sideNav__list">
+        <li className="sideNav__item">
+          <a href="" className="sideNav__link">
+            <FiMap />
+            <span>Tour</span>
           </a>
         </li>
-        <li>
-          <a href="">
-            <span>icon</span>
-            <span>Tours</span>
+        <li className="sideNav__item">
+          <a href="" className="sideNav__link">
+            <FiHome />
+            <span>Hotel</span>
           </a>
         </li>
-        <li>
-          <a href="">
-            <span>icon</span>
-            <span>favourites</span>
+        <li className="sideNav__item">
+          <a href="" className="sideNav__link">
+            <MdCarRental />
+            <span>Car rental</span>
           </a>
         </li>
-        <li>
-          <a href="">
-            <span>icon</span>
-            <span>transactions</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <span>icon</span>
-            <span>Settings</span>
+        <li className="sideNav__item">
+          <a href="" className="sideNav__link">
+            <MdTrackChanges />
+            <span>Tracker</span>
           </a>
         </li>
       </ul>
