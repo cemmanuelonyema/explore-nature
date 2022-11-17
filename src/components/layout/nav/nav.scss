@@ -1,0 +1,20 @@
+.header {
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 1.6rem 3.2rem;
+  &__list {
+    display: flex;
+  }
+  &__item {
+  }
+  &__link {
+    padding: 1rem;
+  }
+}

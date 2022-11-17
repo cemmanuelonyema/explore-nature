@@ -1,0 +1,62 @@
+@import "../../../styles/abstract/mixins";
+
+.footer {
+  background-color: #081315;
+  font-size: 1.6rem;
+  color: #777;
+
+  &__container {
+    padding: 6.4rem 3.2rem;
+    max-width: 120rem;
+    margin: 0 auto;
+
+    display: flex;
+    gap: 6.4rem;
+
+    @include respond(phone-max600) {
+      flex-direction: column;
+    }
+  }
+  &__left {
+    flex: 1.5;
+
+    &-text {
+      width: 80%;
+    }
+
+    ul {
+      display: flex;
+
+      a {
+        padding: 1rem;
+        margin: 1rem 1.5rem 1.5rem 0;
+        color: white;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        background-color: #142e32;
+        display: grid;
+        place-content: center;
+      }
+    }
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+    gap: 3.2rem;
+
+    @include respond(phone-max600) {
+      flex-direction: column;
+    }
+
+    &-heading {
+      margin-bottom: 1.6rem;
+      color: white;
+    }
+
+    &-link {
+      padding: 4px 0;
+    }
+  }
+}

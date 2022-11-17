@@ -1,0 +1,18 @@
+.features {
+  background-color: blue;
+
+  &__container {
+    padding: 6.4rem 3.2rem;
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2.4rem;
+  }
+  &__heading {
+    margin-bottom: 2.4rem;
+  }
+}

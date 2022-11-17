@@ -33,6 +33,11 @@ calc = breakpoint/16px
       @content;
     }
   }
+  @if $breakpoint== phone-max432 {
+    @media (max-width: 27em) {
+      @content;
+    }
+  }
   @if $breakpoint== phone-min600 {
     @media (min-width: 37.5em) {
       @content;
@@ -48,7 +53,7 @@ calc = breakpoint/16px
       @content;
     }
   }
-  @if $breakpoint== tab-max1200 {
+  @if $breakpoint== desktop-max1200 {
     @media (max-width: 75em) {
       @content;
     }
