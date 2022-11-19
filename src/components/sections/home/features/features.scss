@@ -1,8 +1,9 @@
 .features {
-  background-color: blue;
+  background-color: var(--primary-color-dark);
+  background-color: rgb(0, 102, 0);
 
   &__container {
-    padding: 6.4rem 3.2rem;
+    padding: 10rem 3.2rem;
     max-width: 120rem;
     margin: 0 auto;
   }
