@@ -36,8 +36,8 @@ export const Features = () => {
         <div className="features__content">
           {featuresData.map(({ id, title, text, icon }) => (
             <Box key={id}>
+              <span>{id}</span>
               <h3>{title}</h3>
-              <span>{icon}</span>
               <p>{text}</p>
             </Box>
           ))}
