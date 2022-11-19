@@ -31,8 +31,8 @@ export const TourPlans = () => {
       <div className="plans__container">
         <h2 className="plans__heading">Most Popular Tour plans</h2>
         <div className="plans__content">
-          {toursData.map((item, i) => (
-            <Card key={i} data={item} />
+          {toursData.map((item) => (
+            <Card key={item.id} data={item} />
           ))}
         </div>
       </div>

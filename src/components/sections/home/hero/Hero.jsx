@@ -33,7 +33,7 @@ export const Hero = () => {
       <div className="img-container">
         <img
           ref={(el) => (image = el)}
-          src="/public/img/rolands-varsbergs-miKmVyq3qhE-unsplash.jpg"
+          src="/img/rolands-varsbergs-miKmVyq3qhE-unsplash.jpg"
         />
       </div>
 

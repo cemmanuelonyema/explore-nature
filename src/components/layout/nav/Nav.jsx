@@ -9,7 +9,7 @@ export const Nav = () => {
     <header className="header-nav">
       <nav className="nav">
         <div className="logo-box">
-          <img src="../../../../public/img2/logo.png" alt="logo" />
+          <img src="/img2/logo.png" alt="logo" />
         </div>
 
         <ul className="nav__list">
